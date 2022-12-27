@@ -3,76 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="scss/style.css" rel="stylesheet">
-    <link href="scss/fonts.css" rel="stylesheet">
-    <link href="scss/mobile.css" rel="stylesheet" media="(min-width: 320px)">
-    <link href="scss/tablet.css" rel="stylesheet" media="(min-width: 768px)">
-    <link href="scss/desktop.css" rel="stylesheet" media="(min-width: 1120px)">
     <title>Title</title>
+
 </head>
-<body class="body">
-<header class="header">
-    <div class="upper-menu-desktop">
-        <h1 class="title-services title-services__margin">Услуги и сервисы</h1>
-        <label class="upper-menu-desktop__repair">
+<body class="body"> <!--done-->
+<header class="header"> <!--done-->
+    <div class="upper-menu-desktop"> <!--done-->
+        <h1 class="title-services upper-menu-desktop__title-services">Услуги и сервисы</h1><!--done-->
+        <label class="upper-menu-desktop__repair"><!--done-->
             Оставить заявку
-            <button class="btn btn__repair btn__repair--upper-menu-desktop btn__repair--icon "></button>
+            <button class="btn btn--repair upper-menu-desktop__btn-repair btn--repair-icon "></button><!--done-->
         </label>
-        <label class="upper-menu-desktop__check-status">
+        <label class="upper-menu-desktop__check-status"><!--done-->
             Статус ремонта
-            <button class="btn btn__check-status btn__check-status--upper-menu-desktop btn__check-status--icon"></button>
+            <button class="btn btn--check-status upper-menu-desktop__btn-check-status btn--check-status-icon"></button><!--done-->
         </label>
     </div>
 
-    <div class="upper-menu upper-menu--off-desktop">
-        <button class="btn btn__burger btn__burger--upper-menu btn__burger--icon "></button>
-        <img src="./img/menu-image/divider.svg" class="upper-menu__divider upper-menu--off-mobile " alt="">
-        <img src="./img/menu-image/logo.svg" class="logo logo__margin " alt="">
-        <button class="btn btn--off-mobile btn__call btn__call--upper-menu btn__call--icon "></button>
-        <button class="btn btn--off-mobile btn__chat btn__chat--upper-menu btn__chat--icon "></button>
-        <button class="btn btn--off-mobile btn__profile btn__profile--upper-menu btn__profile--icon "></button>
-        <img src="./img/menu-image/divider.svg" class="upper-menu__divider " alt="">
-        <button class="btn btn__repair btn__repair--upper-menu btn__repair--icon "></button>
-        <button class="btn btn__check-status btn__check-status--upper-menu btn__check-status--icon"></button>
+    <div class="upper-menu upper-menu--off-desktop"><!--done-->
+        <button class="btn btn--burger upper-menu__btn-burger btn--burger-icon "></button><!--done-->
+        <img src="./img/menu-image/divider.svg" class="upper-menu__divider upper-menu--off-mobile " alt=""><!--done-->
+        <img src="./img/menu-image/logo.svg" class="logo upper-menu__logo " alt=""><!--done-->
+        <button class="btn btn--off-mobile btn--call upper-menu__btn-call btn--call-icon "></button><!--done-->
+        <button class="btn btn--off-mobile btn--chat upper-menu__btn-chat btn--chat-icon "></button><!--done-->
+        <button class="btn btn--off-mobile btn--profile upper-menu__btn-profile btn--profile-icon "></button><!--done-->
+        <img src="./img/menu-image/divider.svg" class="upper-menu__divider " alt=""><!--done-->
+        <button class="btn btn--repair upper-menu__btn-repair btn--repair-icon "></button><!--done-->
+        <button class="btn btn--check-status upper-menu__btn-check-status btn--check-status-icon"></button><!--done-->
     </div>
 </header>
-<main class="main">
-    <h1 class="title-services title-services__margin title-services--off-desktop">Услуги и сервисы</h1>
-    <nav class="slide-menu">
-        <ul class="slide-menu__list-menu">
-            <li class="slide-menu__list-menu--item slide-menu__list-menu--item--active"><a
-                    class="slide-menu__list-menu--item--link" href="#">Ремонтируемые бренды</a></li>
-            <li class="slide-menu__list-menu--item"><a class="slide-menu__list-menu--item--link" href="#">Ремонтируемые
-                устройства</a></li>
-            <li class="slide-menu__list-menu--item"><a class="slide-menu__list-menu--item--link" href="#">Цены на
-                услуги</a></li>
-            <li class="slide-menu__list-menu--item"><a class="slide-menu__list-menu--item--link" href="#">Адреса
-                сервисных центров</a></li>
-            <li class="slide-menu__list-menu--item"><a class="slide-menu__list-menu--item--link" href="#">Специальные
-                цены</a></li>
-            <li class="slide-menu__list-menu--item"><a class="slide-menu__list-menu--item--link" href="#">Отзывы</a>
-            </li>
+<main class="main"><!--done-->
+    <h1 class="title-services main__title-services title-services--off-desktop">Услуги и сервисы</h1><!--done-->
+    <nav class="slide-menu"><!--done-->
+        <ul class="slide-menu__list-menu"><!--done-->
+            <li class="slide-menu__list-menu--item slide-menu__list-menu--item--active"> <!--done-->
+              <a class="slide-menu__list-menu--item--link" href="#">Ремонтируемые бренды</a></li><!--done-->
+            <li class="slide-menu__list-menu--item"><!--done-->
+              <a class="slide-menu__list-menu--item--link" href="#">Ремонтируемые
+                устройства</a></li><!--done-->
+            <li class="slide-menu__list-menu--item"><!--done-->
+              <a class="slide-menu__list-menu--item--link" href="#">Цены на
+                услуги</a></li><!--done-->
+            <li class="slide-menu__list-menu--item"><!--done-->
+              <a class="slide-menu__list-menu--item--link" href="#">Адреса
+                сервисных центров</a></li><!--done-->
+            <li class="slide-menu__list-menu--item"><!--done-->
+              <a class="slide-menu__list-menu--item--link" href="#">Специальные
+                цены</a></li><!--done-->
+            <li class="slide-menu__list-menu--item"><!--done-->
+              <a class="slide-menu__list-menu--item--link" href="#">Отзывы</a>
+            </li><!--done-->
         </ul>
     </nav>
-    <article class="about">
-        <div class="about__article">
+    <article class="about"><!--done-->
+        <div class="about__article"><!--done-->
             <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                 Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
-                гарантией производителя.</p>
+                гарантией производителя.</p><!--done-->
             <p class="about__text about__text--off-mobile">Мы успешно работаем с 1992 года и заслужили репутацию
                 надежного партнера, что подтверждает большое количество постоянных клиентов.
                 <span class="about__text about__text--on-desktop">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
-            </p>
-            <button class="about__button">Читать далее</button>
+            </p> <!--done-->
+            <button class="about__button">Читать далее</button><!--done-->
         </div>
-        <img src="./img/cps-image.jpg" class="about__image-about" alt="">
+        <img src="./img/cps-image.jpg" class="about__image-about" alt=""><!--done-->
 
     </article>
 
+<section class="repair-block">
+    <div class="repair-block__header">
+      <h1 class="repair-block__h1"> Ремонт техники различных брендов </h1>
+    </div>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="link-container-brand link-container-brand__size">
+            <img src="img/brand-image/Lenovo.svg" alt="lenovo" class="link-container-brand__image">
+            <a href="#" class="link-container-brand__link"></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="link-container-brand link-container-brand__size">
+            <img src="img/brand-image/SAMSUNG.svg" alt="samsung" class="link-container-brand__image">
+            <a href="#" class="link-container-brand__link"></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="link-container-brand link-container-brand__size">
+            <img src="img/brand-image/Apple.svg" alt="apple" class="link-container-brand__image">
+            <a href="#" class="link-container-brand__link"></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="link-container-brand link-container-brand__size">
+            <img src="img/brand-image/ViewSonic.svg" alt="ViewSonic" class="link-container-brand__image">
+            <a href="#" class="link-container-brand__link"></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="link-container-brand link-container-brand__size">
+            <img src="img/brand-image/BOSCH.svg" alt="Bosch" class="link-container-brand__image">
+            <a href="#" class="link-container-brand__link"></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="link-container-brand link-container-brand__size">
+            <img src="img/brand-image/hp.svg" alt="HP" class="link-container-brand__image">
+            <a href="#" class="link-container-brand__link"></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="link-container-brand link-container-brand__size">
+            <img src="img/brand-image/aser.svg" alt="aser" class="link-container-brand__image">
+            <a href="#" class="link-container-brand__link"></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="link-container-brand link-container-brand__size">
+            <img src="img/brand-image/SONY.svg" alt="SONY" class="link-container-brand__image">
+            <a href="#" class="link-container-brand__link"></a>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination">
+      </div>
+    </div>
+
+    <div class="repair-block__link-container">
+      <ul class="repair-block__brands">
+        <li class="link-container-brand link-container-brand__size">
+          <img src="img/brand-image/Lenovo.svg" alt="lenovo" class="link-container-brand__image">
+          <!--<a href="#" class="link-container-brand__link"></a>-->
+          <a href="#" class="link-container-brand__link"></a>
+        </li>
+        <li class="link-container-brand link-container-brand__size">
+          <img src="img/brand-image/SAMSUNG.svg" alt="samsung" class="link-container-brand__image">
+          <a href="#" class="link-container-brand__link"></a>
+        </li>
+        <li class="link-container-brand link-container-brand__size">
+          <img src="img/brand-image/Apple.svg" alt="apple" class="link-container-brand__image">
+          <a href="#" class="link-container-brand__link"></a>
+        </li>
+        <li class="link-container-brand link-container-brand__size">
+          <img src="img/brand-image/ViewSonic.svg" alt="ViewSonic" class="link-container-brand__image">
+          <a href="#" class="link-container-brand__link"></a>
+        </li>
+        <li class="link-container-brand link-container-brand__size">
+          <img src="img/brand-image/BOSCH.svg" alt="Bosch" class="link-container-brand__image">
+          <a href="#" class="link-container-brand__link"></a>
+        </li>
+        <li class="link-container-brand link-container-brand__size">
+          <img src="img/brand-image/hp.svg" alt="HP" class="link-container-brand__image">
+          <a href="#" class="link-container-brand__link"></a>
+        </li>
+        <li class="link-container-brand link-container-brand__size">
+          <img src="img/brand-image/aser.svg" alt="aser" class="link-container-brand__image">
+          <a href="#" class="link-container-brand__link"></a>
+        </li>
+        <li class="link-container-brand link-container-brand__size">
+          <img src="img/brand-image/SONY.svg" alt="SONY" class="link-container-brand__image">
+          <a href="#" class="link-container-brand__link"></a>
+        </li>
+        <li class="link-container-brand link-container-brand__size">
+          <img src="img/brand-image/Lenovo.svg" alt="lenovo" class="link-container-brand__image">
+          <a href="#" class="link-container-brand__link"></a>
+        </li>
+        <li class="link-container-brand link-container-brand__size">
+          <img src="img/brand-image/SAMSUNG.svg" alt="samsung" class="link-container-brand__image">
+          <a href="#" class="link-container-brand__link"></a>
+        </li>
+        <li class="link-container-brand link-container-brand__size">
+          <img src="img/brand-image/Apple.svg" alt="apple" class="link-container-brand__image">
+          <a href="#" class="link-container-brand__link"></a>
+        </li>
+      </ul>
+      <button class="repair-block__btn-show-more">Показать все</button>
+    </div>
+  </section>
 </main>
 <footer>
 
 </footer>
-
 </body>
 </html>

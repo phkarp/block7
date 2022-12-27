@@ -1,17 +1,33 @@
-$bgColor: #24292e;
-$text: #fff;
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+@import "fonts";
+
+@import "blocks/body";
+@import "swiper/swiper-bundle.min";
+
+@import "blocks/header";
+
+@import "blocks/upper-menu-desktop";
+@import "blocks/title-services";
+@import "blocks/upper-menu";
+
+@import "btn";
+@import "blocks/logo";
+@import "blocks/slide-menu";
+
+@import "blocks/main";
+@import "about";
+
+@import "blocks/body-left-menu";
+@import "blocks/left-menu";
+
+@import "repair-block";
+@import "link-container-brand";
+@import "blocks/swiper";
+html {
+  box-sizing: border-box;
 }
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+*, *:after, *:before {
+  box-sizing: inherit;
 }
+
