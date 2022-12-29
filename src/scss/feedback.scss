@@ -44,8 +44,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     font-family: $font-family-M;
+    margin-left: 30px;
 
     .feedback-form__input {
       display: block;
@@ -90,7 +91,7 @@
     .feedback-form__text {
       color: $text-color-blocks;
       font-size: 14px;
-      margin: 15px 35px;
+      margin: 15px 35px 15px 0;
       display: block;
 
       @media screen and (min-width: $screen-sm) {
@@ -98,7 +99,7 @@
         width: 288px;
       }
       @media screen and (min-width: $screen-md) {
-        margin-left: 35px;
+        margin-left: 0;
         width: auto;
       }
 
@@ -132,6 +133,7 @@
       }
       @media screen and (min-width: $screen-md) {
         margin-right: 30px;
+        margin-left: 245px;
       }
       /*&:after {
         content: '';
