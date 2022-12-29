@@ -1833,7 +1833,8 @@ button.swiper-pagination-bullet {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-family: "TT Lakes Medium", sans-serif; }
+    font-family: "TT Lakes Medium", sans-serif;
+    margin-left: 30px; }
     .feedback .feedback-form .feedback-form__input {
       display: block;
       height: 48px;
@@ -1983,7 +1984,7 @@ button.swiper-pagination-bullet {
       height: 48px;
       width: 376px;
       margin-top: 16px;
-      border: 1px solid #FFFFFF;
+      border: 1px solid #EAEAEA;
       border-radius: 10px;
       padding-left: 15px; }
       @media screen and (min-width: 320px) {
@@ -1999,27 +2000,6 @@ button.swiper-pagination-bullet {
       .order-call .order-call-form .order-call-form__input:-ms-input-placeholder {
         color: #B5B6BC; }
       .order-call .order-call-form .order-call-form__input::placeholder {
-        color: #B5B6BC; }
-    .order-call .order-call-form .order-call-form__textarea {
-      height: 118px;
-      width: 376px;
-      margin-top: 16px;
-      border: 1px solid #FFFFFF;
-      border-radius: 10px;
-      padding: 15px; }
-      @media screen and (min-width: 320px) {
-        .order-call .order-call-form .order-call-form__textarea {
-          width: 288px; } }
-      @media screen and (min-width: 768px) {
-        .order-call .order-call-form .order-call-form__textarea {
-          width: 376px; } }
-      .order-call .order-call-form .order-call-form__textarea::-webkit-input-placeholder {
-        color: #B5B6BC; }
-      .order-call .order-call-form .order-call-form__textarea::-moz-placeholder {
-        color: #B5B6BC; }
-      .order-call .order-call-form .order-call-form__textarea:-ms-input-placeholder {
-        color: #B5B6BC; }
-      .order-call .order-call-form .order-call-form__textarea::placeholder {
         color: #B5B6BC; }
     .order-call .order-call-form .order-call-form__text {
       color: #7E7E82;
