@@ -1450,7 +1450,7 @@ button.swiper-pagination-bullet {
         border-top: 3px solid #ff3e79;
         border-right: 3px solid #ff3e79;
         margin: 0 0 0 auto;
-        transform: translate(-16px, 16px) rotate(45deg); } }
+        transform: rotate(45deg); } }
     @media screen and (min-width: 768px) {
       .link-container-brand .link-container-brand__link:after {
         content: '';
@@ -1460,7 +1460,7 @@ button.swiper-pagination-bullet {
         border-top: 3px solid #ff3e79;
         border-right: 3px solid #ff3e79;
         margin: 0 0 0 auto;
-        transform: translate(-15px, 15px) rotate(45deg); } }
+        transform: rotate(45deg); } }
     @media screen and (min-width: 1366px) {
       .link-container-brand .link-container-brand__link:after {
         content: '';
@@ -1470,7 +1470,7 @@ button.swiper-pagination-bullet {
         border-top: 3px solid #ff3e79;
         border-right: 3px solid #ff3e79;
         margin: 0 0 0 auto;
-        transform: translate(-15px, 15px) rotate(45deg); } }
+        transform: rotate(45deg); } }
   .link-container-brand .link-container-brand__btn {
     display: flex;
     position: absolute;
@@ -1497,7 +1497,7 @@ button.swiper-pagination-bullet {
       border-top: 3px solid #FFFFFF;
       border-right: 3px solid #FFFFFF;
       margin: 0 0 0 auto;
-      transform: translate(-10px, 11px) rotate(45deg); }
+      transform: rotate(45deg); }
 
 .swiper {
   margin-left: 20px;
