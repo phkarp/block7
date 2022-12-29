@@ -1488,7 +1488,7 @@ button.swiper-pagination-bullet {
     border: none;
     text-transform: uppercase;
     padding-left: 18px;
-    justify-content: start; }
+    justify-content: flex-start; }
     .link-container-brand .link-container-brand__btn:after {
       content: '';
       display: block;
@@ -1832,7 +1832,7 @@ button.swiper-pagination-bullet {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     font-family: "TT Lakes Medium", sans-serif; }
     .feedback .feedback-form .feedback-form__input {
       display: block;
