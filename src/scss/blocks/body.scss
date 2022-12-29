@@ -1,0 +1,17 @@
+@import '../less/variables';
+
+@media screen and (min-width: $screen-sm) {
+}
+@media screen and (min-width: $screen-md) {
+}
+@media screen and (min-width: $screen-lg) {
+}
+
+
+.body {
+  margin: 0;
+  padding: 0;
+  @media screen and (min-width: $screen-lg) {
+    display: flex;
+  }
+}

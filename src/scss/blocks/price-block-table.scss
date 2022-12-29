@@ -1,0 +1,104 @@
+@import '../less/variables';
+
+@media screen and (min-width: $screen-sm) {
+}
+@media screen and (min-width: $screen-md) {
+}
+@media screen and (min-width: $screen-lg) {
+}
+
+
+
+.price-block-table {
+  font-family: $font-family-R;
+  font-size: 14px;
+  width: 100%;
+  height: 324px;
+  border: none;
+  margin-right: 50px;
+
+  @media screen and (min-width: $screen-sm) {
+    display: none;
+  }
+  @media screen and (min-width: $screen-md) {
+    display: table;
+    margin: 24px;
+  }
+  @media screen and (min-width: $screen-lg) {
+
+    margin: 24px;
+  }
+
+  &__table {
+    text-align: left;
+    background: $bg-color-table;
+    border-spacing: 0;
+    width: 95%;
+
+    tr {
+
+      td {
+        padding: 0 15px;
+        background: $bg-color-table;
+        border-top: 2px solid $bg-color-main;
+        position: relative;
+
+        .price-block-table__btn {
+          display: flex;
+          position: relative;
+          background: $bg-color-btn;
+          width: 120px;
+          height: 32px;
+          border-radius: 15px ;
+          text-decoration: none;
+          font-family: $font-family-B;
+          font-size: 12px;
+          color: $text-color-btn;
+          line-height: 31px;
+          border: none;
+          text-transform: uppercase;
+          padding-left: 18px;
+
+          &:after {
+            content: '';
+            display: block;
+            width: 7px;
+            height: 7px;
+            border-top: 2px solid $bg-color-table;
+            border-right: 2px solid $bg-color-table;
+            margin: 0 0 0 auto;
+            transform: translate(-10px, 11px) rotate(45deg);
+          }
+        }
+
+        &:last-child {
+          border-radius: 0 10px 10px 0;
+          width: 120px;
+
+
+        }
+
+        &:first-child {
+          border-radius: 10px 0 0 10px;
+        }
+      }
+    }
+
+    th {
+      padding: 0 20px;
+    }
+
+  }
+
+  .price-block-table__row {
+    height: 64px;
+
+    &--first {
+      background: $bg-color-main;
+      color: $text-color-blocks;
+      text-decoration: none;
+      font-family: $font-family-M;
+
+    }
+  }
+}

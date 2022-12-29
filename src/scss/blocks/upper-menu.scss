@@ -1,0 +1,93 @@
+@import '../less/variables.scss';
+
+@media screen and (min-width: $screen-sm) {
+}
+@media screen and (min-width: $screen-md) {
+}
+@media screen and (min-width: $screen-lg) {
+}
+
+.upper-menu {
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 88px;
+  padding: 18px 16px;
+
+  @media screen and (min-width: $screen-sm) {
+    margin-right: 0;
+    padding: 0 0 18px 10px;
+  }
+
+
+    .upper-menu__divider {
+    @media screen and (min-width: $screen-sm) {
+      margin-left: 16px;
+    }
+    @media screen and (min-width: $screen-md) {
+      margin-left: 16px;
+    }
+    @media screen and (min-width: $screen-lg) {
+      margin-left: 16px;
+    }
+  }
+
+    .upper-menu__logo {
+    margin-left: 16px;
+    margin-right: auto;
+  }
+
+  .upper-menu__btn-call {
+
+  }
+
+  .upper-menu__btn-chat {
+    @media screen and (min-width: $screen-md) {
+      margin-left: 16px;
+    }
+  }
+
+  .upper-menu__btn-profile {
+    @media screen and (min-width: $screen-md) {
+      margin-left: 16px;
+    }
+  }
+
+  .upper-menu__btn-repair {
+    @media screen and (min-width: $screen-sm) {
+      margin-left: 12px;
+    }
+    @media screen and (min-width: $screen-md) {
+      margin-left: 20px;
+    }
+  }
+
+  .upper-menu__btn-check-status {
+    @media screen and (min-width: $screen-sm) {
+      margin: 0 16px 0 10px;
+    }
+    @media screen and (min-width: $screen-md) {
+      margin: 0 16px;
+    }
+  }
+
+
+
+  .upper-menu--off-mobile {
+    display: block;
+
+    @media screen and (min-width: $screen-sm) {
+      display: none;
+    }
+  }
+}
+
+.upper-menu--off-desktop {
+
+  @media screen and (min-width: $screen-lg) {
+    display: none;
+    padding: 18px 16px 18px 0;
+    background-color: $bg-color-upper-menu;
+  }
+}

@@ -1,4 +1,4 @@
-
+@import "~normalize.css";
 @import "fonts";
 
 @import "blocks/body";
@@ -17,12 +17,29 @@
 @import "blocks/main";
 @import "about";
 
-@import "blocks/body-left-menu";
+
 @import "blocks/left-menu";
+@import "blocks/body-left-menu";
 
 @import "repair-block";
 @import "link-container-brand";
 @import "blocks/swiper";
+
+@import "repair-technic";
+@import "blocks/bloks-header";
+
+@import "price_block";
+
+@import "blocks/footer";
+
+@import "blocks/price-block-table";
+
+@import "feedback-body";
+@import "feedback";
+
+@import "order-call-body";
+@import "order-call";
+
 html {
   box-sizing: border-box;
 }

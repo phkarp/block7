@@ -1,0 +1,57 @@
+@import '../less/variables.scss';
+
+@media screen and (min-width: $screen-sm) {
+}
+@media screen and (min-width: $screen-md) {
+}
+@media screen and (min-width: $screen-lg) {
+}
+
+.slide-menu {
+
+  .slide-menu__list-menu {
+    display: flex;
+    font-family: $font-family-M;
+    font-size: 16px;
+    color: $text-color-slide;
+    justify-content: space-between;
+    overflow: scroll;
+    list-style: none;
+
+    @media screen and (min-width: $screen-sm) {
+      margin: 0;
+    }
+    @media screen and (min-width: $screen-lg) {
+      justify-content: left;
+      overflow: visible;
+      flex-wrap: wrap;
+      padding-left: 16px;
+      margin-bottom: 22px;
+    }
+
+    .slide-menu__list-menu--item {
+      border: 2px solid rgba(0, 0, 0, 0);
+    }
+
+    .slide-menu__list-menu--item--active {
+      background: $bg-color-slide-menu;
+      border: 2px solid $border-color;
+      border-radius: 6px;
+      color: $text-color-slide--active;
+    }
+
+    .slide-menu__list-menu--item--link {
+
+      display: block;
+      width: max-content;
+      padding: 8px 22px;
+      text-decoration: none;
+      color: $text-color-slide;
+
+      @media screen and (min-width: $screen-lg) {
+        padding: 8px 20px;
+      }
+    }
+  }
+
+}

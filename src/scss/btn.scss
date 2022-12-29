@@ -1,0 +1,80 @@
+@import 'less/variables';
+
+@media screen and (min-width: $screen-sm) {
+}
+@media screen and (min-width: $screen-md) {
+}
+@media screen and (min-width: $screen-lg) {
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: $bg-color-btn;
+  border-radius: 50%;
+  transition: all 2s ease 0s;
+
+      &:hover {
+        transform: rotate(360deg);
+      }
+
+}
+
+.btn--repair-icon {
+  background-image: url("../img/menu-image/repair.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.btn--check-status-icon {
+  //background-image: url("/block7/src/img/menu-image/checkstatus-icon.svg");
+  background-image: url("../img/menu-image/checkstatus-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.btn--burger-icon {
+  background-image: url("../img/menu-image/burger.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.btn--burger-icon--close {
+  background-image: url("../img/menu-image/burger-close.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.btn--call-icon {
+  background-image: url("../img/menu-image/call.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.btn--chat-icon {
+  background-image: url("../img/menu-image/chat.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.btn--search-icon {
+  background-image: url("../img/menu-image/search.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.btn--profile-icon {
+  background-image: url("../img/menu-image/profile.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.btn--off-mobile {
+  @media screen and (min-width: $screen-sm) {
+    display: none;
+  }
+  @media screen and (min-width: $screen-md) {
+    display: block;
+  }
+}

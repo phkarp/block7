@@ -1,0 +1,93 @@
+@import '/less/variables';
+
+@media screen and (min-width: $screen-sm) {
+}
+@media screen and (min-width: $screen-md) {
+}
+@media screen and (min-width: $screen-lg) {
+}
+
+.repair-technic {
+
+  .repair-technic__header {
+    margin: 0;
+    padding: 16px 32px;
+
+    @media screen and (min-width: $screen-sm) {
+      padding: 16px;
+    }
+  }
+
+  .repair-technic__swiper {
+    width: 300px;
+    height: 220px;
+  }
+
+  .repair-technic__link-container-brand {
+
+    width: 224px;
+    height: 160px;
+    margin: 16px 24px 0 0;
+    padding: 16px;
+
+    @media screen and (min-width: $screen-sm) {
+      padding: 0 16px;
+    }
+    @media screen and (min-width: $screen-md) {
+      width: 240px;
+    }
+    @media screen and (min-width: $screen-lg) {
+      width: 240px;
+      margin: 16px 32px 0 0;
+    }
+  }
+
+  .repair-technic__link-container {
+    display: none;
+
+    @media screen and (min-width: $screen-md) {
+      display: block;
+    }
+  }
+
+  .repair-technic__brands {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 0 10px 32px;
+    padding: 10px 0;
+
+    @media screen and (min-width: $screen-md) {
+      margin: 0 0 10px 24px;
+    }
+  }
+
+  .repair-technic__btn-show-more {
+    background-image: url("../img/expand-down.svg");
+    background-repeat: no-repeat;
+    background-color: inherit;
+    border-style: none;
+    text-align: start;
+    padding-left: 25px;
+    font-family: $font-family-M;
+    font-size: 16px;
+    padding-bottom: 16px;
+    margin-left: 31px;
+  }
+
+  .repair-technic__btn-show-more--up {
+    background-image: url("../img/expand-up.svg");
+  }
+
+  .repair-technic__btn-show-more--hidden {
+    display: none;
+  }
+
+  .repair-technic__brands--show {
+    height: auto;
+    overflow: auto;
+  }
+
+
+}

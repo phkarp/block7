@@ -1,0 +1,79 @@
+@import '../less/variables.scss';
+
+@media screen and (min-width: $screen-sm) {
+}
+@media screen and (min-width: $screen-md) {
+}
+@media screen and (min-width: $screen-lg) {
+}
+
+.upper-menu-desktop {
+  display: none;
+  width: 100%;
+  padding: 18px 16px 18px 0;
+  background-color: $bg-color-upper-menu;
+  height: 88px;
+  align-items: center;
+
+  @media screen and (min-width: $screen-lg) {
+    display: flex;
+  }
+
+  .upper-menu-desktop__title-services {
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .upper-menu-desktop__repair {
+    @media screen and (min-width: $screen-lg) {
+      display: inline-block;
+      font-family: $font-family-B;
+      font-size: 16px;
+      color: $text-color;
+      width: 195px;
+      height: 55px;
+      padding: 10px;
+      line-height: 32px;
+      margin-left: auto;
+      position: relative;
+    }
+
+  }
+
+  .upper-menu-desktop__btn-repair {
+    @media screen and (min-width: $screen-lg) {
+      position: absolute;
+      top: 7px;
+      right: 0;
+    }
+  }
+
+  .upper-menu-desktop__check-status {
+    @media screen and (min-width: $screen-lg) {
+      display: inline-block;
+      font-family: $font-family-B;
+      font-size: 16px;
+      color: $text-color;
+      width: 190px;
+      height: 55px;
+      padding: 10px;
+      line-height: 32px;
+      margin-left: 32px;
+      position: relative;
+    }
+  }
+
+  .upper-menu-desktop__btn-check-status {
+    @media (min-width: $screen-lg) {
+      position: absolute;
+      top: 7px;
+      right: 0;
+    }
+  }
+}
+
+

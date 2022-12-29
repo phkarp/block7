@@ -1,0 +1,22 @@
+@import '../less/variables';
+
+@media screen and (min-width: $screen-sm) {
+}
+@media screen and (min-width: $screen-md) {
+}
+@media screen and (min-width: $screen-lg) {
+}
+
+.blocks-header {
+  background: linear-gradient(to right, $bg-color-main white);
+  border-top: 1px solid $border-color-one-line;
+
+  .blocks-header__h1 {
+    font-family: $font-family-R;
+    font-size: 16px;
+    color: $text-color-blocks;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+}

@@ -1,0 +1,39 @@
+@import '../less/variables.scss';
+
+@media screen and (min-width: $screen-sm) {
+}
+@media screen and (min-width: $screen-md) {
+}
+@media screen and (min-width: $screen-lg) {
+}
+
+.title-services {
+
+  font-family: $font-family-B;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: $text-color;
+  position: relative;
+  margin: 0;
+
+
+  &:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: $bg-color;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+}
+
+.title-services--off-desktop {
+  @media screen and (min-width: $screen-lg) {
+    display: none;
+  }
+}

@@ -1,0 +1,161 @@
+@import '../less/variables.scss';
+
+@media screen and (min-width: $screen-sm) {
+}
+@media screen and (min-width: $screen-md) {
+}
+@media screen and (min-width: $screen-lg) {
+}
+
+.left-menu {
+  width: 320px;
+  min-height: 100%;
+  box-shadow: 10px 0 40px -10px $box-shadow-color;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: $bg-color-left-menu;
+
+  @media screen and (min-width: $screen-sm) {
+    width: 100vw;
+  }
+  @media screen and (min-width: $screen-md) {
+    width: 320px;
+  }
+  @media screen and (min-width: $screen-lg) {
+    display: flex;
+    box-shadow: none;
+  }
+
+  .left-menu__header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .left-menu__btn-burger {
+    @media screen and (min-width: $screen-lg) {
+      display: none;
+    }
+
+  }
+
+  .left-menu__btn-search {
+    margin-right: 10px;
+    margin-left: auto;
+  }
+
+  .left-menu__img-logo {
+    margin-left: 20px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .left-menu__main-menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  .left-menu__list-menu {
+    list-style: none;
+    font-size: 16px;
+    margin: 40px 0 0 0;
+    padding: 0;
+
+    .left-menu__list-menu--item {
+      margin-bottom: 32px;
+      padding-left: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .left-menu__list-menu--item-link {
+      display: block;
+      color: black;
+      text-decoration: none;
+
+      &--active {
+        color: $text-color-left-menu-active;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 4px;
+          height: 32px;
+          background: $bg-color;
+          margin-top: -5px;
+          margin-left: -20px;
+          border-top-right-radius: 50px;
+          border-bottom-right-radius: 50px;
+        }
+      }
+    }
+  }
+
+  .left-menu__footer {
+    margin: auto 0 0 0;
+    padding: 0 0 32px 0;
+  }
+
+  .left-menu__btn-container {
+    margin: 0 0 16px 16px;
+  }
+
+  .left-menu__btn-call {
+  }
+
+  .left-menu__btn-chat {
+    margin-left: 16px;
+  }
+
+  .left-menu__btn-profile {
+    margin-left: 16px;
+  }
+
+  .left-menu__footer-text {
+    margin-left: 20px;
+  }
+
+  .left-menu__email {
+    display: block;
+    margin: 0 0 12px 0;
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  .left-menu__phone {
+    display: block;
+    font-family: $font-family-B;
+    font-size: 24px;
+    margin: 0 0 40px 0;
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  .left-menu__language {
+    margin-left: 20px;
+    font-family: $font-family-M;
+    font-size: 16px;
+
+
+    .left-menu__footer-input {
+      position: absolute;
+      appearance: none;
+
+
+      &:checked + label {
+        color: $text-color-left-menu-active;
+      }
+    }
+
+    .left-menu__footer-label {
+      margin-right: 15px;
+    }
+  }
+
+
+}
