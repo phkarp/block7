@@ -16,11 +16,30 @@ let btnCall = document.querySelectorAll('.btn--call');
 let orderCall = document.querySelector('.order-call-body');
 
 let leftMenu = document.querySelector('.body-left-menu');
+let lm = document.querySelector('.left-menu');
 let body = document.querySelector('.body')
+
+function closePopup(variable, className) {
+
+  document.onclick = function (e) {
+
+    if (variable.style.display !== 'none') {
+
+      if (e.target.className === className) {
+        variable.style.display = 'none';
+      }
+    } else if (leftMenu.style.display === 'none') {
+      document.onclick = () => {
+      }
+    } else closePopup(leftMenu, 'body-left-menu');
+  }
+
+}
 
 
 upperMenuBtnBurger.addEventListener('click', () => {
   leftMenu.style.display = 'block';
+  closePopup(leftMenu, 'body-left-menu');
 })
 
 leftMenuBtnBurger.addEventListener('click', () => {
@@ -32,21 +51,8 @@ for (let i = 0; i < btnChat.length; i++) {
   btnChat[i].addEventListener('click', () => {
     feedback.style.display = 'block';
     body.style.overflow = 'hidden';
-    document.onclick = function (e) {
-      console.log(1);
 
-      if (feedback.style.display !== 'none') {
-        console.log(2);
-        if (e.target.className === 'feedback-body') {
-          feedback.style.display = 'none';
-          console.log(3);
-        }
-      } else {
-        document.onclick = () => {
-            console.log(15);
-        }
-      }
-    }
+    closePopup(feedback, 'feedback-body');
   })
 }
 
@@ -60,22 +66,8 @@ for (let i = 0; i < btnChat.length; i++) {
   btnCall[i].addEventListener('click', () => {
     orderCall.style.display = 'block';
     body.style.overflow = 'hidden';
+    closePopup(orderCall, 'order-call-body');
 
-    document.onclick = function (e) {
-      console.log(1);
-
-      if (orderCall.style.display !== 'none') {
-        console.log(4);
-        if (e.target.className === 'order-call-body') {
-          orderCall.style.display = 'none';
-          console.log(5);
-        }
-      } else {
-        document.onclick = () => {
-          console.log(15);
-        }
-      }
-    }
   })
 }
 
