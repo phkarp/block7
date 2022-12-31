@@ -2,7 +2,7 @@ import 'swiper/swiper-bundle'
 import './swiper'
 import '../scss/style.scss'
 
-console.log('Works!')
+console.log('Works!');
 
 let upperMenuBtnBurger = document.querySelector('.upper-menu__btn-burger');
 let leftMenuBtnBurger = document.querySelector('.left-menu__btn-burger');
@@ -16,7 +16,6 @@ let btnCall = document.querySelectorAll('.btn--call');
 let orderCall = document.querySelector('.order-call-body');
 
 let leftMenu = document.querySelector('.body-left-menu');
-let lm = document.querySelector('.left-menu');
 let body = document.querySelector('.body')
 
 function closePopup(variable, className) {
