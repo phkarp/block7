@@ -16,6 +16,18 @@
   background: white;
   border-left: 1px solid $border-color-one-line;
 
+  /*&:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+  }*/
+
   @media screen and (min-width: $screen-sm) {
     width: 100%;
   }

@@ -15,9 +15,32 @@ let orderCallBtnBurger = document.querySelector('.order-call__btn-burger');
 let btnCall = document.querySelectorAll('.btn--call');
 let orderCall = document.querySelector('.order-call-body');
 
+let beforeFeedback = document.querySelector('.feedback');
 
 let leftMenu = document.querySelector('.body-left-menu');
 let body = document.querySelector('.body')
+
+
+document.onclick = function (e) {
+  console.log(1);
+  if (feedback.style.display !== 'none') {
+    console.log(2);
+    if (e.target.className === 'feedback-body') {
+      feedback.style.display = 'none';
+      console.log(3);
+    }
+  }
+
+  if (orderCall.style.display !== 'none') {
+    console.log(4);
+    if (e.target.className === 'order-call-body') {
+      orderCall.style.display = 'none';
+      console.log(5);
+    }
+  }
+
+}
+
 
 upperMenuBtnBurger.addEventListener('click', () => {
   leftMenu.style.display = 'block';
